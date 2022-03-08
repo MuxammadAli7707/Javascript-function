@@ -109,3 +109,28 @@
 // console.log(newCount);
 // console.log(newAdd);
 
+// Array eng kichigini topish
+
+// let massArray = [2, 3, 6, 8, 9, 11, 45];
+// let count = massArray[0];
+// for(let i = 0; i < massArray.length; i++){
+//   if(massArray[i] < count){
+//     count = massArray[i]
+//   }
+// }
+
+// console.log(count);
+
+// Array eng kichigini juft topish
+
+// let massArray = [2, 3, 6, 8, 9, 11, 45];
+// let count = massArray[0];
+// for(let i = 0; i < massArray.length; i++){
+//   if(i % 2 == 0){
+//     if(massArray[i] < count){
+//       count = massArray[i];
+//     }
+//   }
+// }
+
+// console.log(count);
