@@ -89,6 +89,42 @@
 //   }
 // }
 
+// Problem 161 L VA K orasidagi sonlarni yig'indisi
+
+// let masArray = [2, 4, 12];
+// let = K = 0;
+// let L = 2;
+// let a = 0;
+// for(let i = K + 1; i < L; i++){
+//   a += masArray[i];
+// }
+// console.log(a);
+
+// Problem 162 L VA K orasidagi sonlarni yig'indisi va o'rta arifmetik soni
+// let masArray = [5, 10, 3, 7, 10, 12, 4];
+// let = K = 0;
+// let L = 4;
+// let a = 0;
+// let count = 0;
+// for(let i = K + 1; i < L; i++){
+//   a += masArray[i];
+//   count++;
+// }
+// console.log(a / count);
+
+// Problem 163 L VA K orasidagi sonlarni qolgan sonlar yig'indisi
+// let masArray = [5, 10, 3, 7, 10, 12, 4];
+// let = K = 0;
+// let L = 4;
+// let count = 0;
+
+// for(let i = K + 1; i < L; i++){
+//   masArray[i] = 0;
+// }
+// for(let j = 0; j < masArray.length; j++){
+//   count += masArray[j];
+// } console.log(count);
+
 
 // Problem 164 Arifmetik progressiya
 
@@ -134,20 +170,30 @@
 // Problem 166 musbat va manfiy sonlar ketma ketligi
 
 // let massArray = [-2, 4, -8, 16, -32, 10];
-// let sortArray = [];
-// let manfiyArray = [];
-// for(let i = 0; i < massArray.length; i++){
-//   if(i > 0){
-//     sortArray[sortArray.length] = massArray[i];
-//   } else {    
-//     manfiyArray[manfiyArray.length] = massArray[i]
+// let n = true;
+// if(massArray[0] < 0){
+//   for(let i = 0; i < massArray.length; i++){
+//     if(i % 2 == 0 &&  massArray[i]> 0){
+//       n = i;
+//       break;
+//     } else if(i % 2 == 1 && massArray[i] < 0) {
+//       n = i;
+//       break;
+//     }
+//   }
+// } else {
+//   for(let i = 0; i < massArray.length; i++){
+//     if(i % 2 == 0 && massArray[i] < 0){
+//       n = i;
+//       break;
+//     } else if(i % 2 == 1 && massArray[i] > 0) {
+//       n = i;
+//       break;
+//     }
 //   }
 // }
-// for(let i = 0; i < manfiyArray.length; i++){
-//   sortArray[sortArray.length] = manfiyArray[i]
-// }
 
-// console.log(sortArray);
+// console.log(n);
 
 // Problem 167 juft indexli sonlarni qiymati yigindisi
 
@@ -193,8 +239,9 @@
 
 // let massArray = [1, 2, -10, 3, 5];
 // let r = 5;
+// let count = r - massArray[0];
 // for(let i = 0; i < massArray.length; i++){
-//   if(massArray[i] == r){
+//   if(){
 //     console.log(massArray[i]);
 //   }
 // }
