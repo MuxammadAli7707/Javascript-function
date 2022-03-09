@@ -251,17 +251,17 @@
 
 // Problem 170 r soniga teng bolgan sonni chiqarish
 
-let massArray = [1, 2, -10, 3, 5];
-let r = 5;
-let count = massArray[0];
-let res = Infinity;
-for(let i = 0; i < massArray.length; i++){
-  const t = Math.abs(massArray[i] - r);
-  if(res > t){
-    res = t;
-    count = massArray[i];
-  }
-} console.log(count);
+// let massArray = [1, 2, -10, 3, 5];
+// let r = 5;
+// let count = massArray[0];
+// let res = Infinity;
+// for(let i = 0; i < massArray.length; i++){
+//   const t = Math.abs(massArray[i] - r);
+//   if(res > t){
+//     res = t;
+//     count = massArray[i];
+//   }
+// } console.log(count);
 
 // 171
 // let massArray = [1, 2, 3, 3, 4, 5, 5];
