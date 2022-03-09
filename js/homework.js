@@ -89,15 +89,57 @@
 //   }
 // }
 
+
+// Problem 164 Arifmetik progressiya
+
+// let masArray = [11, 14, 17, 20, 25];
+// let a = masArray[1] - masArray[0];
+// let count = 0;
+// for(let i = 1; i < masArray.length; i++){
+//   if(masArray[i] - a == masArray[i - 1]){
+//     count += 0;
+//   } else {
+//     count += 1;
+//     break;
+//   }
+// } if(masArray.length < 2){
+//   console.log(false);
+// } else if(count == 0){
+//   console.log(a);
+// } else {
+//   console.log(false);
+// }
+
+
+// Problem 165 Geometrik progressiya
+
+// let masArray = [2, 6, 18];
+// let a = Math.floor(masArray[1] / masArray[0]);
+// let count = 0;
+// for (let i = 1; i < masArray.length; i++) {
+//   if (masArray[i] / a != masArray[i - 1]) {
+//     count += 1;
+//     break
+//   }
+// }
+// if(masArray.length < 2){
+//   console.log(false);
+// }
+// else if (count == 0) {
+//   console.log(a);
+// } else {
+//   console.log(false);
+// }
+
 // Problem 166 musbat va manfiy sonlar ketma ketligi
 
-// let massArray = [-2, 4, -8, 16, -32];
+// let massArray = [-2, 4, -8, 16, -32, 10];
 // let sortArray = [];
 // let manfiyArray = [];
 // for(let i = 0; i < massArray.length; i++){
-//   if(i < 0){
+//   if(i > 0){
 //     sortArray[sortArray.length] = massArray[i];
-//   } else {
+//   } else {    
 //     manfiyArray[manfiyArray.length] = massArray[i]
 //   }
 // }
@@ -149,8 +191,8 @@
 
 // Problem 170 r soniga teng bolgan sonni chiqarish
 
-// let massArray = [-2, 4, -8, 16, -32];
-// let r = -2;
+// let massArray = [1, 2, -10, 3, 5];
+// let r = 5;
 // for(let i = 0; i < massArray.length; i++){
 //   if(massArray[i] == r){
 //     console.log(massArray[i]);
@@ -225,4 +267,3 @@
 //     console.log(`index: ${i}`);
 //   }
 // }
-
