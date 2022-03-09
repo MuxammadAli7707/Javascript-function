@@ -66,6 +66,19 @@
 
 // console.log(sortArray);
 
+// Problem 158 
+// let masArray = [7, 10, 3, 2];
+// let arr = [];
+// let n = masArray.length;
+
+// for(let i = 0; i < masArray.length; i++){
+//   if(i % 2 == 0){
+//     arr[arr.length] = masArray[i];
+//   } else {
+//     arr[arr.length] = masArray[n - i]
+//   }
+// }console.log(arr);
+
 // Problem 159 massivdagi eng oxirgi qiymatdan kichik bo'lgan birinchi element
 
 // let massArray = [7, 10, 3, 5];
@@ -223,28 +236,32 @@
 
 // Problem 169 o'zidan keyn kelgan sonning katta sonning index kamayish tatibi
 
-// let massArray = [15, 1, 54, -5, 56, -52, 65, 5];
+// let massArray = [1, -3, 12, -1, 3, -4];
 // let sortArr = [];
 // let count = 0;
 
-// for(let i = massArray.length; i >= 0; i--) {
-//   if(massArray[i] > massArray[i + 1]){
-//     sortArr[sortArr.length] = i;
+// for(let i = massArray.length - 1; i >= 0; i--) {
+//   if(massArray[i] < massArray[i - 1]){
+//     sortArr[sortArr.length] = massArray[i - 1];
 //     count++;
 //   }
-// }console.log(sortArr, `c: ${count}`);
+// }[]
+// console.log(sortArr, `c: ${count}`);
 
 
 // Problem 170 r soniga teng bolgan sonni chiqarish
 
-// let massArray = [1, 2, -10, 3, 5];
-// let r = 5;
-// let count = r - massArray[0];
-// for(let i = 0; i < massArray.length; i++){
-//   if(){
-//     console.log(massArray[i]);
-//   }
-// }
+let massArray = [1, 2, -10, 3, 5];
+let r = 5;
+let count = massArray[0];
+let res = Infinity;
+for(let i = 0; i < massArray.length; i++){
+  const t = Math.abs(massArray[i] - r);
+  if(res > t){
+    res = t;
+    count = massArray[i];
+  }
+} console.log(count);
 
 // 171
 // let massArray = [1, 2, 3, 3, 4, 5, 5];
