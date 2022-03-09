@@ -67,17 +67,13 @@
 // console.log(sortArray);
 
 // Problem 158 
-// let masArray = [7, 10, 3, 2];
-// let arr = [];
-// let n = masArray.length;
 
-// for(let i = 0; i < masArray.length; i++){
-//   if(i % 2 == 0){
-//     arr[arr.length] = masArray[i];
-//   } else {
-//     arr[arr.length] = masArray[n - i]
-//   }
-// }console.log(arr);
+// let masArray = [7, 10, 3, 2];
+// let arr = "";
+// for(let i = 0; i < masArray.length / 2; i++){
+//   arr += masArray[i] + " " + masArray[masArray.length - 1 - i] + " ";
+// }
+// console.log(arr);
 
 // Problem 159 massivdagi eng oxirgi qiymatdan kichik bo'lgan birinchi element
 
@@ -263,14 +259,14 @@
 //   }
 // } console.log(count);
 
-// 171
-// let massArray = [1, 2, 3, 3, 4, 5, 5];
-// let sortArray = massArray[0];
-// for(let i = 0; i < massArray.length; i++){
-//   if(massArray[massArray.length] == sortArray[sortArray.length]){
-//     massArray.pop();
-//   }
-// } console.log(massArray);
+// 171 takrorlangan sonni bittasini chiqarish
+let massArray = [1, 2, 3, 3, 4, 5, 5];
+let sortArray = massArray[0];
+for(let i = 0; i < massArray.length; i++){
+  if(massArray[massArray.length] == sortArray[sortArray.length]){
+    massArray.pop();
+  }
+} console.log(massArray);
 
 // Problem 175 juft sonalarni chiqarish
 
