@@ -355,6 +355,37 @@
 // }
 // console.log(sortArray);
 
+// Problem 178
+
+let massArray = [2, 10, 5, 8, 12];
+let sortArray = [];
+let countArray = [];
+let count = 0;
+let arrCount = 0;
+for(let i = 0; i < massArray.length; i++){
+  if(massArray[i] < massArray[i + 1]){
+    count++;
+    countArray[countArray.length] = massArray[i];
+  } else{
+    countArray[countArray.length] = massArray[i];
+    for(let j = i + 1; j < massArray.length; j++){
+      if(massArray[j] < massArray[j + 1]){
+        arrCount++;
+        sortArray[sortArray.length] = massArray[j];
+      } else{
+        sortArray[sortArray.length] = massArray[j];
+      }
+    }
+    break
+  }
+}
+if(count >= arrCount){
+  console.log(countArray);
+} else{
+  console.log(sortArray);
+}
+
+
 // Problem 179 Fibonachi sonlar
 
 // let n = 6;
