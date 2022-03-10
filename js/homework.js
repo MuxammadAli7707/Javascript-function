@@ -1,4 +1,4 @@
-// Problem 153 
+// Problem 153  juft sonlarni index o'rni
 
 // let massArray = [7, 10, 5, 3, 2];
 // let sortArray = [];
@@ -259,14 +259,66 @@
 //   }
 // } console.log(count);
 
-// 171 takrorlangan sonni bittasini chiqarish
-let massArray = [1, 2, 3, 3, 4, 5, 5];
-let sortArray = massArray[0];
-for(let i = 0; i < massArray.length; i++){
-  if(massArray[massArray.length] == sortArray[sortArray.length]){
-    massArray.pop();
+// Problem 171 takrorlangan sonni bittasini chiqarish
+
+let massArray = [2, 5, 5, 6, 4, 4];
+let sortArray = []; 
+for (let i = 0; i < massArray.length; i++) {
+  let count = 0;
+  for (let j = 0; j < sortArray.length; j++) {
+    if (sortArray[j] == massArray[i]) {
+      count++;
+      break
+    }
   }
-} console.log(massArray);
+  if (count == 0) {
+    sortArray.push(massArray[i])
+  }
+}
+console.log(sortArray);
+
+// Problem 172 massivlarni joyini almashtirish
+
+// let a = [5, null];
+// let b = [2, null];
+// let c = [];
+// c = a;
+// a = b;
+// b = c; 
+// console.log(a);
+// console.log(b);
+
+// Problem 173
+
+// let massArray = [1, -10, 2, 1, 2, 5];
+
+// for(let i = 0; i < massArray.length; i++){
+//   if(massArray[i] < 5) {
+//     massArray[i] *= 2;
+//   }
+//   else {
+//     massArray[i] /= 2;
+//   }
+// }
+// console.log(massArray);
+
+
+// Problem 174
+
+// let massArray = [1, 5];
+// let sortArray = [-3, 3];
+// let arr = [];
+
+// for(let i = 0; i < massArray.length; i++) {
+//   if(massArray[i] > sortArray[i]){
+//     arr[arr.length] = massArray[i];
+//   }
+//   else {
+//     arr[arr.length] = sortArray[i];
+//   }
+// }
+
+// console.log(arr);
 
 // Problem 175 juft sonalarni chiqarish
 
@@ -286,7 +338,22 @@ for(let i = 0; i < massArray.length; i++){
 // for(let i = 0; i < massArray.length; i++){
 //   count += massArray[i];
 //   allArray[allArray.length] = count;
+
 // } console.log(allArray);
+
+// Problem 177
+
+// let massArray = [2, 10, 5, 8, 12];
+// let sortArray = [];
+
+// for(let i = 0; i < massArray.length; i++) {
+//   let count = 0;
+//   for(let j = i; j < massArray.length; j++) {
+//     count += massArray[j];
+//   }
+//   sortArray[sortArray.length] = count;
+// }
+// console.log(sortArray);
 
 // Problem 179 Fibonachi sonlar
 
@@ -318,6 +385,19 @@ for(let i = 0; i < massArray.length; i++){
 //   }
 // } console.log(`Min: ${min}`, `Max: ${max}`);
 
+// Problem 181
+
+// let a = [1, 3, 15, 3]
+// let b = [2, 4];
+// let c = [];
+// for(let i = 0; i < a.length; i++){
+//   c[c.length] = a[i];
+// }for(let j = 0; j < b.length; j++){
+//     c[c.length] = b[j];
+// }
+// console.log(c);
+
+
 // Problem 182
 
 // let massArray = [-2, 4, -8, 16, -32];
@@ -327,3 +407,4 @@ for(let i = 0; i < massArray.length; i++){
 //     console.log(`index: ${i}`);
 //   }
 // }
+

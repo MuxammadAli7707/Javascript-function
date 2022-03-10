@@ -134,3 +134,127 @@
 // }
 
 // console.log(count);
+
+// Array 51 a va b massivlar qiymatini almashtirish
+
+// let a = [2, 3, -9, -5, 6];
+// let b = [1, -10, 18, 20, 22];
+// let c = [];
+
+// c = a;
+// a = b;
+// b = c;
+// console.log(a, b);
+
+// Array 52
+// let massArray = [1, -10, 2, 1, 2, 5];
+
+// for(let i = 0; i < massArray.length; i++){
+//   if(massArray[i] < 5) {
+//     massArray[i] *= 2;
+//   }
+//   else {
+//     massArray[i] /= 2;
+//   }
+// }
+// console.log(massArray);
+
+// Array 53 a va b massivlar ichidagi eng katta elementini chiqarish
+
+// let a = [1, 3, -9, 65, 30];
+// let b = [3, 15, 55, 14, -6];
+// let c = [];
+// for(let i = 0; i < a.length; i++){
+//   if(a[i] > b[i]){
+//     c[i] = a[i];
+//   } else {
+//     c[i] = b[i];
+//   }
+// }
+// console.log(c);
+
+// Array 54 juft sonlar
+
+// let n = [1, 2, 5, 6, 8, 10];
+// let massArray = [];
+// let count = 0;
+// for(let i = 0; i <= n.length; i++){
+//   if(n[i] % 2 == 0){
+//     massArray[massArray.length] = n[i];
+//     count++;
+//   } 
+// }
+
+// console.log(massArray, `${count} ta juft son`);
+
+// Array 55 toq indexdagi sonlar shart operatirisiz
+
+// let massArray = [7, 10, 5, 3, 2, 6, 9];
+// let sortArray = [];
+// for(let i = 0; i < massArray.length; i++){
+//   for(let j = i; j % 2 != 0; j++){
+//     sortArray[sortArray.length] = massArray[j];
+//   }
+// }
+// console.log(sortArray);
+
+// Array 56  3 ga karrali indexdagi elementlar
+
+// let massArray = [7, 10, 5, 3, 2, 6, 9];
+// let sortArray = [];
+// for(let i = 0; i < massArray.length; i += 3){
+//   sortArray[sortArray.length] = massArray[i];
+//   console.log(i);
+// }
+// console.log(sortArray);
+
+// Array 57 oldin juft indexdagi keyn toq indexdagi elementlar chiqarish
+
+// let a = [1, 5, 2, 6, 7, 8, 9, 10];
+// let b = [];
+// for(let i = 0; i < a.length; i++){
+//   for(let j = i; j % 2 == 0; j++){
+//     b[b.length] = a[j];
+//   }
+// }
+// for(let i = 0; i < a.length; i++){
+//   for(let j = i; j % 2 != 0; j++){
+//     b[b.length] = a[j];
+//   }
+// }
+// console.log(b);
+
+// Array 58
+
+// let masArray = [5, 4, 9, 2, 8, 11, 3];
+// let sortArray = [];
+// let count = 0;
+// for(let i = 0; i < masArray.length; i++){
+//   count += masArray[i];
+//   sortArray[sortArray.length] = count;
+// }
+// console.log(sortArray);
+
+// Array 59
+
+// let masArray = [5, 4, 9, 2, 8, 11, 3];
+// let sortArray = [];
+// let count = 0;
+// for(let i = 0; i < masArray.length; i++){
+//   count += masArray[i] / 2;
+//   sortArray[sortArray.length] = count;
+// }
+// console.log(sortArray);
+
+// Array 60
+
+// let masArray = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sortArray = [];
+// for(let i = 0; i < masArray.length; i++){
+//   let count = 0;
+//   for(let j = i; j < masArray.length; j++){
+//     count += masArray[j];
+//   }
+//   sortArray[i] = count;
+// }
+// console.log(sortArray);
