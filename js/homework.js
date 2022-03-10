@@ -241,7 +241,7 @@
 //     sortArr[sortArr.length] = massArray[i - 1];
 //     count++;
 //   }
-// }[]
+// }
 // console.log(sortArr, `c: ${count}`);
 
 
@@ -261,21 +261,21 @@
 
 // Problem 171 takrorlangan sonni bittasini chiqarish
 
-let massArray = [2, 5, 5, 6, 4, 4];
-let sortArray = []; 
-for (let i = 0; i < massArray.length; i++) {
-  let count = 0;
-  for (let j = 0; j < sortArray.length; j++) {
-    if (sortArray[j] == massArray[i]) {
-      count++;
-      break
-    }
-  }
-  if (count == 0) {
-    sortArray.push(massArray[i])
-  }
-}
-console.log(sortArray);
+// let massArray = [2, 5, 5, 6, 4, 4];
+// let sortArray = []; 
+// for (let i = 0; i < massArray.length; i++) {
+//   let count = 0;
+//   for (let j = 0; j < sortArray.length; j++) {
+//     if (sortArray[j] == massArray[i]) {
+//       count++;
+//       break
+//     }
+//   }
+//   if (count == 0) {
+//     sortArray.push(massArray[i])4
+//   }
+// }
+// console.log(sortArray);
 
 // Problem 172 massivlarni joyini almashtirish
 
