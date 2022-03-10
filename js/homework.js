@@ -366,7 +366,7 @@ for(let i = 0; i < massArray.length; i++){
   if(massArray[i] < massArray[i + 1]){
     count++;
     countArray[countArray.length] = massArray[i];
-  } else{
+  } else{ 
     countArray[countArray.length] = massArray[i];
     for(let j = i + 1; j < massArray.length; j++){
       if(massArray[j] < massArray[j + 1]){
